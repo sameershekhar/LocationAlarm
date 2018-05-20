@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LocationAlarm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="intro_name">Intro Slider</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome!</string>
+    <string name="slide_1_desc">The easiest way to set alarm and description for a particluar location or multiple alarm for multiple location at once.</string>
+
+    <string name="slide_2_title">Location Tracker</string>
+    <string name="slide_2_desc">Track your current location on Google map</string>
+    <string name="setalarm">Set Alarm</string>
+    <string name="AlarmLocation">Enter Location</string>
+    <string name="description">Description</string>
+
+
+</resources>

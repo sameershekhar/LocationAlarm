@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sameershekhar.locationalarm.NotificationReceiverActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mg20dp"
+        android:text="Location"
+        android:id="@+id/locationReached"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/description"
+        android:layout_marginTop="@dimen/mg10dp"
+        android:layout_marginLeft="@dimen/mg20dp"
+        android:layout_marginRight="@dimen/mg20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationDscription"
+        android:layout_below="@+id/locationReached"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/locationDscription"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/mg10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/locationDscription"
+        android:id="@+id/stopTracking"
+        android:text="stoptracking"/>
+    </FrameLayout>
+
+</RelativeLayout>

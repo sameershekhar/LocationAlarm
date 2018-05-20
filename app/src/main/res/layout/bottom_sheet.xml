@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <fragment
+        android:id="@+id/place_fragment"
+        android:layout_below="@id/toolbar"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mg10dp"
+        android:padding="@dimen/mg10dp"
+        android:layout_marginLeft="@dimen/mg5dp"
+        android:layout_marginRight="@dimen/mg5dp"
+        android:layout_below="@id/place_fragment"
+        android:id="@+id/inputDescription"
+        android:hint="description"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/inputDescription"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/mg20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/inputDscription"
+            android:id="@+id/startTracking"
+            android:paddingLeft="@dimen/mg5dp"
+            android:paddingRight="@dimen/mg5dp"
+            android:background="@color/colorAccent"
+            android:text="Save Alarm"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
+
